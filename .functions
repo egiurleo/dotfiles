@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+function kill {
+	if [ -n "$1" ]; then
+    lsof -ti:$1 | xargs kill
+	else
+		echo "Provide the port. Example: kill 3000"
+	fi;
+}
+
+function dotfiles {
+	cwd=$(pwd)
+	cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Files/development/dotfiles
+	sh update_dotfiles.sh
+	cd $cwd
+}

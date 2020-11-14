@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+export PATH=$PATH:/Users/emilygiurleo/Library/Python/3.7/bin

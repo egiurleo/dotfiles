@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+alias start_pg="pg_ctl -D /usr/local/var/postgres start"
+alias stop_pg="pg_ctl -D /usr/local/var/postgres stop"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="source ~/.zshrc"
