@@ -20,7 +20,4 @@ cp ./.zshrc ~/.zshrc
 echo "importing .vimrc"
 cp ./.vimrc ~/.vimrc
 
-echo "importing .exports"
-cp ./.exports ~/.exports
-
 echo "Imported ✨"
