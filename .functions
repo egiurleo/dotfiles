@@ -10,7 +10,7 @@ function kill {
 
 function dotfiles {
 	cwd=$(pwd)
-	cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Files/development/dotfiles
+	cd ~/dotfiles
 	sh update_dotfiles.sh
 	cd $cwd
 }
