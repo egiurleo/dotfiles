@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo "copying .config/starship.toml"
-cp ~/.config/starship.toml ./.config
+cp ~/.config/starship.toml ./.config/starship.toml
 
-echo "copying aliases"
+echo "copying .aliases"
 cp ~/.aliases ./
 
-echo "copying exports"
+echo "copying .exports"
 cp ~/.exports ./
 
-echo "copying functions"
+echo "copying .functions"
 cp ~/.functions ./
 
 echo "copying .zshrc"
