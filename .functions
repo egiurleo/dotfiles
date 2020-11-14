@@ -8,9 +8,23 @@ function kill {
 	fi;
 }
 
-function dotfiles {
+function import_dotfiles {
 	cwd=$(pwd)
 	cd ~/dotfiles
 	sh update_dotfiles.sh
+	cd $cwd
+}
+
+function export_dotfiles {
+	cwd=$(pwd)
+	cd ~/dotfiles
+	sh update_dotfiles.sh
+	cd $cwd
+}
+
+function setup_dotfiles {
+	cwd=$(pwd)
+	cd ~/dotfiles
+	sh setup.sh
 	cd $cwd
 }
