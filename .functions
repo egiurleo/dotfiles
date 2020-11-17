@@ -28,3 +28,11 @@ function setup_dotfiles {
 	sh setup.sh
 	cd $cwd
 }
+
+function remove_containers {
+
+}
+
+function remove_images {
+
+}
