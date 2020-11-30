@@ -11,7 +11,7 @@ function kill {
 function import_dotfiles {
 	cwd=$(pwd)
 	cd ~/dotfiles
-	sh update_dotfiles.sh
+	sh import_dotfiles.sh
 	cd $cwd
 }
 
