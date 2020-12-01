@@ -30,7 +30,7 @@ let g:lightline = {
       \ 'component_function': {
       \   'gitbranch': 'gitbranch#name'
       \ },
-      \ 'colorscheme': 'ayu_night',
+      \ 'colorscheme': 'ayu_light',
       \ }
 
 " Install vim-plug if not already installed
