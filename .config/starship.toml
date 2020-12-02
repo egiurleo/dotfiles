@@ -1,12 +1,2 @@
-format = """
-[](bold green)$directory$git_branch$git_status[➜](bold green) """
-
-[nodejs]
-disabled = true
-
-[gcloud]
-disabled = true
-
-[time]
-disabled = false
-format = '[$time](bold yellow)'
+[character]
+success_symbol = "[➜](bold green)"
