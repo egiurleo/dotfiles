@@ -29,6 +29,33 @@ function setup_dotfiles {
 	cd $cwd
 }
 
+function clean_branches {
+  : ${REMOTE:=origin}
+
+  set -x
+  git remote update $REMOTE --prune
+  set +x
+
+  TO_DELETE=$(diff <(git branch | cut -c 3-) <(git branch -r | cut -c 3- | grep $REMOTE | sed "s%^$REMOTE/%%") | grep '<' | awk '{print $2}')
+
+  if [[ -z "$TO_DELETE" ]]
+  then
+    echo "No local branches to delete."
+    exit
+  fi
+
+  echo "Deleting these (local) branches: $TO_DELETE"
+  echo "Press enter to continue"
+  read
+
+  a=("${(f)TO_DELETE}")
+
+  for branch in $a
+  do
+    git branch -D $branch
+  done
+}
+
 function remove_containers {
 
 }
