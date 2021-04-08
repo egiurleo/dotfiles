@@ -5,3 +5,6 @@ alias stop_pg="pg_ctl -D /usr/local/var/postgres stop"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="source ~/.zshrc"
+
+# Find private IP address
+alias ifconfig | grep "inet " | grep -v 127.0.0.1
